@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>NBA Search</title>
+  <title>Zip Planner</title>
   <!-- Bootswatch Styling for Improving the Aesthetics -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
 
@@ -23,28 +23,30 @@
   <div class="container">
 
     <!-- Jumbotron for Title -->
-    <h1>NBA Search</h1>
-    <div class="row-fluid">
-    <form id="city-form">
-            <div class="span2">
-              <label>Zip Code</label>
-              <input type="text" name="zipcode" class="input-small">
-              <div class="text-error"></div>
-            </div>
-            
-            <div class="span4">
-              <label>City</label>
-              <input type="text" name="city" id="city-input">
-            </div>
-            
-            <div class="span2">
-              <label>State</label>
-              <input type="text" name="state" id="state-input">
-            </div>
-          </div>
-          <input id="add-city" type="submit" value="Find a City">
-          </form>
-    </div>
+    <h1>Zip Planner</h1>
+
+
+     <form id="topic-form">
+      <label for="topic-input">Search Zipcode</label>
+      <input type="text" id="topic-input">
+      <br>
+
+      <!-- Button triggers new topic to be added -->
+      <input id="add-topic" type="submit" value="Find My City">
+    </form>
+    
+        <div id="city"></div>
+        <div id="state"></div>
+        <br>
+
+
+
+
+        <form id="weather-form">
+      
+      <!-- Button triggers new topic to be added -->
+      <input id="add-weather" type="submit" value="find weather">
+    </form>
   <div id="js"></div>
     <!-- topics will get dumped here -->
     <div id="topics-view"></div>
@@ -65,14 +67,7 @@
         <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
         
 
-    <form id="topic-form">
-      <label for="topic-input">Add a player to search</label>
-      <input type="text" id="topic-input">
-      <br>
-
-      <!-- Button triggers new topic to be added -->
-      <input id="add-topic" type="submit" value="Add a topic Bro">
-    </form>
+   
 
       </div>
     
