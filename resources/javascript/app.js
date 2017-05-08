@@ -61,7 +61,7 @@ var queryURL = "https://www.zipcodeapi.com/rest/NMVpX2SUKH6rMgaYB2I5ch1beYZKg0q3
           city = "cypress";
           state= "ca";
       $.ajax({
-         url: "http://api.aerisapi.com/observations/"+ city + "," + state + "?client_id="+ CLIENT_ID + "&client_secret=" + CLIENT_SECRET,
+         url: "https://api.aerisapi.com/observations/"+ city + "," + state + "?client_id="+ CLIENT_ID + "&client_secret=" + CLIENT_SECRET,
          dataType: "jsonp",
          success: function(json) {
             if (json.success == true) {
